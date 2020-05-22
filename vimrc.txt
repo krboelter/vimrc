@@ -1,0 +1,51 @@
+" *************
+" PLUGIN SETUP:
+" *************
+
+" specify a directory for plugins
+call plug#begin()
+
+" PLUGINS GO HERE
+Plug 'flazz/vim-colorschemes'
+Plug 'maxmellon/vim-jsx-pretty'
+Plug 'evanleck/vim-svelte'
+Plug 'preservim/nerdtree'
+
+" Initialize plugin system
+call plug#end()
+
+" ***********
+" COLOR THEME
+" ***********
+
+" for list of all colorschemes, see ~/.vim/colors
+:colorscheme Atelier_ForestDark
+
+" VIM SETUP:
+" **********
+set nocompatible
+set number
+set tabstop=4 softtabstop=0 shiftwidth=4 smarttab
+
+" for netrw:
+" let g:netrw_liststyle = 3
+" let g:netrw_banner = 0
+" let g:netrw_browse_split = 3
+" let g:netrw_winsize = 25
+
+
+" *********
+" NERD_TREE:
+" *********
+" open nerd tree with ctrl+n
+map <C-n> :NERDTreeToggle<CR>
+
+" ******
+" REMAPS:
+" ******
+
+" remaps the arrows to resize vertical and horizontal splits
+:noremap <Up> <C-W>+
+:noremap <Down> <C-W>-
+:noremap <Right> <C-W>>
+:noremap <Left> <C-W><
